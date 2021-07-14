@@ -1,0 +1,305 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+/* common styles */
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.header{
+    width: 1410px;
+    background-color: #2D25A0;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-around;
+    
+    }
+
+
+.topnav {
+    
+    overflow: hidden;
+  }
+  
+  /* navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* active class  */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+/* Main Section */
+.banner-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #2D25A0;
+    height: 677px;
+    width: 1440px;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* heading-writting */
+.heading-writting{
+    font-size: 64px;
+    color: #FFFFFF;
+    height: 230px;
+    width: 485px;
+    left: 150px;
+    top: 223px;
+    line-height: 80px;
+    margin-right: 50px;
+    margin-left: 250px;
+
+}
+
+/* button styles */
+.btn{
+   background-color:#E02C6D ; 
+   border: none;
+   color: white;
+   padding: 12px 16px;
+   font-size: 16px;
+   cursor: pointer;
+   margin-left: 250px;
+   
+}
+/* font awesome styles */
+i {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+/* Images  styles */
+
+.thumbnail img{
+    width: 556.01px;
+    height: 438px;
+    background: url(1648334-world-cup-football-player-kick-off-football-kick-football-png-980_772_preview.png);
+    align-items: center;
+    justify-content: center;
+    transition: width 5s, height 5s, transform 3s;
+
+}
+.thumbnail img:hover{
+    width: 800px;
+    height: 800px;
+    transform:rotate(360deg);
+}
+
+/* second section */
+
+.photo-album{
+    width: 1199px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+    
+
+}
+
+
+.photo-frame{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    
+    grid-row-gap:27px;
+
+    
+
+
+}
+
+.photo{
+    
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    align-items: flex-start;
+padding: 15px;
+}
+
+.photo img{
+    width: 300px;
+    height: 256px;
+
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C,;
+
+}
+
+/* Host Cities */
+
+.host-title{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 740px;
+    color: coral;
+}
+
+.host-city{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1440px;
+    margin-top: 100px;
+    padding: 25px;
+}
+
+.host-image img{
+    border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+
+.host-details{
+    
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* footer style */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.logo{
+
+
+}
+
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+
+
+
+
+.fab{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #969BAB;
+    margin: 0px 14px;
+}
+
+.copyright{
+    font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: right;
+
+}
+
+
+/* .......Media Queries .........*/
+
+
+/* ...mobile devices... */
+@media only screen and (max-width:688px) {
+
+    .photo-frame,{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+    .host-city{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-content: center;
+        }
+
+        .host-image img{
+            width:420px;
+        }
+
+        .host-details{
+            width: 300px;
+            
+        }
+}
+    
+
+
+
+/* ....Tablet Devices... */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .photo-frame{
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+    .host-city{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-content: center;
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1452px){
+    .photo-frame{
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+
+}
